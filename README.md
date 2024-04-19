@@ -1,46 +1,69 @@
-# Git-commants
 
-1. git pull origin master
---------------------
-2. Checkout the Branch: First, ensure you are on the branch where you want to stash changes.
- You can use the git checkout Vagelis command to switch to the "Vagelis" branch.
+# Git Commands Cheat Sheet
 
-bash:
-git checkout Vagelis
+Αυτό το αρχείο περιέχει μια λίστα από βασικές εντολές Git που είναι χρήσιμες κατά την διάρκεια της ανάπτυξης λογισμικού.
 
-3.Stash Changes: Once you're on the correct branch, you can use the git stash command to
- stash your changes.
+## Οδηγίες για το Χρήστη
 
-bash:
-git stash
+1. **Git Pull:** Ανακτάει τις αλλαγές από το remote repository και συγχωνεύει με τον τρέχοντα local branch.
 
-4.Verify Stash: You can verify that the changes have been stashed by running git stash list
-This command will list all stashed changes.
+    ```bash
+    git pull origin master
+    ```
 
-bash:
-git stash list
+2. **Checkout the Branch:** Βεβαιωθείτε ότι βρίσκεστε στο branch όπου θέλετε να κρατήσετε τις αλλαγές σας.
 
-5.git branch: Αυτή η εντολή σας επιτρέπει να δείτε όλα τα branches στο repository σας.
-Χρησιμοποιήστε το git branch για να δείτε τα branches και το git branch -a για να δείτε 
-και τα απομακρυσμένα branches.
+    ```bash
+    git checkout Vagelis
+    ```
 
-bash:
-git branch
+3. **Stash Changes:** Κρύψτε τις τροποποιήσεις σας στο τρέχον branch.
 
-6.git checkout: Αυτή η εντολή σας επιτρέπει να μετακινηθείτε ανάμεσα σε διαφορετικά branches.
- Μπορείτε να χρησιμοποιήσετε το git checkout <branch-name> για να μετακινηθείτε σε ένα άλλο
- branch.
-7.git merge: Αυτή η εντολή χρησιμοποιείται για να συγχωνεύσετε ένα branch με ένα άλλο. 
-Χρησιμοποιήστε το git merge <branch-name> για να συγχωνεύσετε το branch <branch-name> με 
-τον τρέχοντα branch.
+    ```bash
+    git stash
+    ```
 
-8.git rebase: Αυτή η εντολή επιτρέπει την αναδιάταξη των commits σας πάνω σε ένα άλλο 
-branch ή στην κορυφή ενός branch. Χρησιμοποιήστε το git rebase <branch-name> για να
- αναδιατάξετε τα commits σας επάνω στο branch <branch-name>.
+4. **Verify Stash:** Επιβεβαιώστε ότι οι τροποποιήσεις σας έχουν αποθηκευτεί επιτυχώς.
 
-9.git reset: Αυτή η εντολή χρησιμοποιείται για να επαναφέρετε την κατάσταση του
- repository σας σε ένα συγκεκριμένο commit. Μπορείτε να χρησιμοποιήσετε το git 
-reset <commit> για να επαναφέρετε το repository σας στο commit <commit>.
+    ```bash
+    git stash list
+    ```
 
-10,git log: Αυτή η εντολή σας επιτρέπει να δείτε το ιστορικό των commits στο
- repository σας. Χρησιμοποιήστε το git log για να δείτε τη λίστα των commits.
+5. **Git Branch:** Προβολή όλων των branches στο repository, συμπεριλαμβανομένων και των απομακρυσμένων branches.
+
+    ```bash
+    git branch        # Προβολή όλων των local branches
+    git branch -a     # Προβολή όλων των local και remote branches
+    ```
+
+6. **Git Checkout:** Μετακινηθείτε ανάμεσα σε διαφορετικά branches.
+
+    ```bash
+    git checkout my-branch    # Μετακίνηση στο branch με όνομα "my-branch"
+    ```
+
+7. **Git Merge:** Συγχωνεύστε ένα branch με ένα άλλο.
+
+    ```bash
+    git merge feature-branch    # Συγχώνευση του branch "feature-branch" με τον τρέχοντα branch
+    ```
+
+8. **Git Rebase:** Αναδιάταξη των commits σας πάνω σε ένα άλλο branch ή στην κορυφή ενός branch.
+
+    ```bash
+    git rebase main    # Αναδιάταξη των commits πάνω στο branch "main"
+    ```
+
+9. **Git Reset:** Επαναφέρετε την κατάσταση του repository σας σε ένα συγκεκριμένο commit.
+
+    ```bash
+    git reset HEAD~3    # Επαναφορά του repository σας τρία commits πριν από το τρέχον commit
+    ```
+
+10. **Git Log:** Δείτε το ιστορικό των commits στο repository σας.
+
+    ```bash
+    git log    # Προβολή του ιστορικού commits
+    ```
+
+Αυτές είναι ορισμένες από τις συνήθεις εντολές Git που μπορείτε να χρησιμοποιήσετε στην καθημερινή σας ανάπτυξη.
