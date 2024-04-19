@@ -1,0 +1,59 @@
+1. git pull origin master
+--------------------
+
+2. Checkout the Branch: First, ensure you are on the branch where you want to stash changes.
+You can use the git checkout Vagelis command to switch to the "Vagelis" branch.
+
+bash:
+git checkout Vagelis
+
+3.Stash Changes: Once you're on the correct branch, you can use the git stash command to
+ stash your changes.
+
+bash:
+git stash
+
+4.Verify Stash: You can verify that the changes have been stashed by running git stash list
+This command will list all stashed changes.
+
+bash:
+git stash list
+
+5. Git Branch: Αυτή η εντολή σας επιτρέπει να δείτε όλα τα branches στο repository σας. 
+Χρησιμοποιήστε το git branch για να δείτε τα branches και το git branch -a για να δείτε
+ και τα απομακρυσμένα branches.
+
+bash:
+git branch        # Προβολή όλων των local branches
+git branch -a     # Προβολή όλων των local και remote branches
+
+6. Git Checkout: Αυτή η εντολή σας επιτρέπει να μετακινηθείτε ανάμεσα σε διαφορετικά branches.
+ Μπορείτε να χρησιμοποιήσετε το git checkout <branch-name> για να μετακινηθείτε σε ένα
+ άλλο branch.
+
+bash:
+git checkout my-branch    # Μετακίνηση στο branch με όνομα "my-branch"
+7. Git Merge: Αυτή η εντολή χρησιμοποιείται για να συγχωνεύσετε ένα branch με ένα άλλο. 
+Χρησιμοποιήστε το git merge <branch-name> για να συγχωνεύσετε το branch <branch-name> με
+ τον τρέχοντα branch.
+
+bash:
+git merge feature-branch    # Συγχώνευση του branch "feature-branch" με τον τρέχοντα branch
+8. Git Rebase: Αυτή η εντολή επιτρέπει την αναδιάταξη των commits σας πάνω σε ένα άλλο branch ή στην κορυφή ενός branch. Χρησιμοποιήστε το git rebase <branch-name> για να αναδιατάξετε τα commits σας επάνω στο branch <branch-name>.
+
+bash:
+git rebase main    # Αναδιάταξη των commits πάνω στο branch "main"
+
+9. Git Reset: Αυτή η εντολή χρησιμοποιείται για να επαναφέρετε την κατάσταση του repository 
+σας σε ένα συγκεκριμένο commit. Μπορείτε να χρησιμοποιήσετε το git reset <commit> για να
+ επαναφέρετε το repository σας στο commit <commit>.
+
+Παράδειγμα:
+
+bash
+Copy code
+git reset HEAD~3    # Επαναφορά του repository σας τρία commits πριν από το τρέχον commit
+10. Git Log: Αυτή η εντολή σας επιτρέπει να δείτε το ιστορικό των commits στο repository σας. Χρησιμοποιήστε το git log για να δείτε τη λίστα των commits.
+
+bash:
+git log    # Προβολή του ιστορικού commits
